@@ -19,15 +19,17 @@ const Projects = ({showHidden}) => {
         <div className={theme.container}>
             <h2 className={theme.heading}> Projects</h2>
             {projects.map((proj,i) => (
-                <div key={i} className="mb-4">
-                    <div className={'${theme.text} front-semibold'}>
+                <ul >
+                <div key={i}>
+                    <div className={`${theme.text} font-semibold`}>
                         {proj.title} ({proj.time})
                     </div>
-                    <div className="text-sm text-gray-500 mb-1">
+                    <div className={theme.text}>
                         Tech stack: {proj.tech_stack}    
                     </div>  
                     <p className={theme.text}>{proj.project_description}</p> 
                 </div>
+                </ul>
             ))
             }
         </div>

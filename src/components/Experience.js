@@ -23,16 +23,16 @@ const Experience = ({showHidden}) => {
         <h2 className={theme.heading}>
             Experience
         </h2>
-        <ul>
+        <ul className="list-disc pl-6">
             {experiences.map((exp,i)=>(
-                <li key={i} className="mb-4">
-                    <div className={'${theme.text} font-semibold'}>
+                <li key={i} className={theme.txt}>
+                    <div className={`${theme.text} font-semibold`}>
                         {exp.title} @ {exp.company}
                     </div>
-                    <div className="text-sm text-gray-500">
+                    <div className={theme.txt}>
                         {exp.time}| {exp.location}
                     </div>
-                    <p className={'${theme.text} mt-1'}>{exp.work_description}</p>
+                    <p className={theme.txt}>{exp.work_description}</p>
                 </li>
             ))}
         </ul>

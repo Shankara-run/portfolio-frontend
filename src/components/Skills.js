@@ -22,7 +22,7 @@ return(
         <ul className="list-disc pl-6">
             {skills.map((skill,i)=>(
                <li key={i} className={theme.text} >
-                <strong>{skill.category}</strong>: {skill.tools}
+                {skill.category} : {skill.tools}
                </li>
             ))}
         </ul>

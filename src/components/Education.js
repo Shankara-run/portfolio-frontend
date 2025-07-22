@@ -19,19 +19,21 @@ const Education = ({showHidden}) =>{
             <h2 className={theme.heading}>
                 Education
             </h2>
+            <ul className=" list-disc pl-6">
             {educations.map((edu,index)=>( 
             <div key={index} className="mb-3">
-                <div className={'$theme.text font-semibold'}>
+                <div className={theme.text}>
                     {edu.institute}
                 </div>
-                <div className="text-sm text-gray-500">
+                <div className={theme.text}>
                     {edu.year} | {edu.category} | Marks: {edu.marks}
                 </div>
-            </div>    
+            </div>  
             )
-        )}
+        )} </ul> 
 
         </div>
+       
     );
 
 };

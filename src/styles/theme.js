@@ -1,10 +1,11 @@
 export const mainTheme = {
-  text: "text-gray-800",
-  heading: "text-xl font-bold mb-2 text-blue-700",
-  container: "mb-6 p-4 bg-white shadow rounded",
+  container:" text-sky-900 bg-white p-4 rounded shadow hover:shadow-lg hover:scale-105 transition-transform duration-50",
+  heading: "text-1xl font-bold ",
+  text: ""
 };
+
 export const hiddenTheme = {
-  text: "text-purple-600 italic",
-  heading: "text-xl font-bold mb-2 text-purple-800 italic",
-  container: "mb-6 p-4 bg-gray-100 border border-dashed border-purple-400",
+  container: "text-red-900 bg-white p-4 rounded shadow hover:shadow-lg hover:scale-105 transition-transform duration-50",
+  heading: " text-1xl font-bold ",
+  text: ""
 };
