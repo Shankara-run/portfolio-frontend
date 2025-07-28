@@ -17,10 +17,10 @@ const Objective = ({showHidden}) => {
     const theme = showHidden? hiddenTheme:mainTheme;
 
     return(
-        <div className={theme.container}>
-      <h2 className={theme.heading}>Objective</h2>
+        <div className="flex flex-col h-screen justify-center  ">
+      <h2 className="mt-4  sticky top-0 x-0 z-0">Objective</h2>
       {objective.map((obj, i) => (
-        <p key={i} className={theme.text}>
+        <p key={i} className="text-center">
           {showHidden ? obj.hidden_summary : obj.summary}
         </p>
       ))}

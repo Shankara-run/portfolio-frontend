@@ -19,13 +19,13 @@ const Education = ({showHidden}) =>{
             <h2 className={theme.heading}>
                 Education
             </h2>
-            <ul className=" list-disc pl-6">
+            <ul >
             {educations.map((edu,index)=>( 
-            <div key={index} className="mb-3">
-                <div className={theme.text}>
+            <div key={index} className={`${theme.innerRow}`} >
+                <div className={`${theme.innerHeading}`}>
                     {edu.institute}
                 </div>
-                <div className={theme.text}>
+                <div className={`${theme.innerDetail}`}>
                     {edu.year} | {edu.category} | Marks: {edu.marks}
                 </div>
             </div>  

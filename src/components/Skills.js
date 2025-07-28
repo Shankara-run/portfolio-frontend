@@ -18,7 +18,7 @@ useEffect(()=>{
 
 return(
     <div className={theme.container}>
-        <h2 className={theme.heading}>Skills</h2>
+        <h2 className="flex flex-rows">Skills</h2>
         <ul className="list-disc pl-6">
             {skills.map((skill,i)=>(
                <li key={i} className={theme.text} >

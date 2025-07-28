@@ -19,23 +19,23 @@ const Experience = ({showHidden}) => {
 
 
     return(
-    <div className={theme.container}>
-        <h2 className={theme.heading}>
+    <div className={`${theme.container}`}>
+        <h2 >
             Experience
         </h2>
-        <ul className="list-disc pl-6">
-            {experiences.map((exp,i)=>(
-                <li key={i} className={theme.txt}>
-                    <div className={`${theme.text} font-semibold`}>
-                        {exp.title} @ {exp.company}
-                    </div>
-                    <div className={theme.txt}>
+        {experiences.map((exp,i)=>(
+        <ul key={i} >
+                    
+                    <div>
+                        {exp.title} @ {exp.company}                  
+                    <div >
                         {exp.time}| {exp.location}
                     </div>
-                    <p className={theme.txt}>{exp.work_description}</p>
-                </li>
-            ))}
+                    </div>
+                    <div >{exp.work_description}</div>
         </ul>
+    ))}
+        
     </div>
     );
 };
