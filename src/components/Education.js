@@ -74,14 +74,9 @@ const Education = ({showHidden}) =>{
                             </div>
                         </div>
 
-                        {/* Decorative Elements */}
-                        <div className={`absolute top-0 right-0 w-16 h-16 transform translate-x-8 -translate-y-8
-                            ${showHidden ? 'bg-red-100' : 'bg-blue-100'} rounded-full opacity-20`}>
-                        </div>
+                       
 
-                        <div className={`absolute bottom-2 right-2 w-2 h-2 rounded-full
-                            ${showHidden ? 'bg-red-300' : 'bg-blue-300'} opacity-50`}>
-                        </div>
+                        
 
                         {/* Academic Icon */}
                         <div className={`absolute top-4 left-4 ${showHidden ? 'text-red-200' : 'text-blue-200'} opacity-30`}>
@@ -93,15 +88,7 @@ const Education = ({showHidden}) =>{
                 ))}
             </div>
 
-            {/* Education Summary */}
-            {educations.length > 0 && (
-                <div className={`mt-8 p-4 rounded-lg ${showHidden ? 'bg-red-50/50' : 'bg-blue-50/50'}
-                    border ${showHidden ? 'border-red-100' : 'border-blue-100'}`}>
-                    <p className={`text-center ${theme.text.secondary} italic`}>
-                        🎓 {educations.length} educational milestone{educations.length !== 1 ? 's' : ''} achieved
-                    </p>
-                </div>
-            )}
+           
         </div>
     );
 

@@ -75,24 +75,13 @@ const Experience = ({showHidden}) => {
                             ))}
                         </div>
 
-                        {/* Decorative Corner */}
-                        <div className={`absolute top-3 right-3 w-3 h-3 rounded-full
-                            ${showHidden ? 'bg-red-100' : 'bg-blue-100'} opacity-50`}>
-                        </div>
+                       
                     </div>
                 </div>
             ))}
         </div>
 
-        {/* Experience Summary */}
-        {experiences.length > 0 && (
-            <div className={`mt-8 p-4 rounded-lg ${showHidden ? 'bg-red-50/50' : 'bg-blue-50/50'}
-                border ${showHidden ? 'border-red-100' : 'border-blue-100'}`}>
-                <p className={`text-center ${theme.text.secondary} italic`}>
-                    🚀 {experiences.length} professional experience{experiences.length !== 1 ? 's' : ''} showcased
-                </p>
-            </div>
-        )}
+        
     </div>
     );
 };

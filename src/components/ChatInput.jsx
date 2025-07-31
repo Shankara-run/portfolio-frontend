@@ -1,24 +1,31 @@
-import { Send } from 'lucide-react';
+import React from 'react';
 
-const ChatInput = ({ inputMessage, setInputMessage, sendMessage, isLoading, themeClasses, handleKeyPress }) => {
+const ChatInput = ({ 
+  inputMessage, 
+  setInputMessage, 
+  sendMessage, 
+  isLoading, 
+  themeClasses 
+}) => {
+
+  const handleKeyPress = (e) => {
+    if (e.key === 'Enter') { 
+      e.preventDefault();  // Prevent form submit if inside a form
+      sendMessage();
+    }
+  };
+
   return (
-    <div className={`flex items-center space-x-3 px-4 py-2 ${themeClasses.card}`}>
+    <div className="p-3 border-t">
       <input
         type="text"
-        className={`w-full px-3 py-2 rounded-lg ${themeClasses.input} focus:outline-none`}
-        placeholder="Type your message..."
+        className={`w-full p-2 rounded-md border ${themeClasses.input}`}
         value={inputMessage}
         onChange={(e) => setInputMessage(e.target.value)}
-        onKeyPress={handleKeyPress}
-      />
-      <button
-        className={`flex-shrink-0 px-3 py-2 rounded-lg text-sm font-medium ${themeClasses.button.primary} 
-        hover:opacity-90 focus:outline-none`}
-        onClick={sendMessage}
+        onKeyDown={handleKeyPress} 
+        placeholder="Type a message..."
         disabled={isLoading}
-      >
-        <Send className="w-5 h-5" />
-      </button>
+      />
     </div>
   );
 };

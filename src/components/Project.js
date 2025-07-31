@@ -75,16 +75,8 @@ const Projects = ({showHidden}) => {
                             ))}
                         </div>
 
-                        {/* Decorative Elements */}
-                        <div className={`absolute top-0 right-0 w-20 h-20 transform translate-x-10 -translate-y-10
-                            ${showHidden ? 'bg-red-100' : 'bg-blue-100'} rounded-full opacity-20
-                            group-hover:scale-150 transition-transform duration-500`}>
-                        </div>
-
-                        <div className={`absolute bottom-2 right-2 w-2 h-2 rounded-full
-                            ${showHidden ? 'bg-red-300' : 'bg-blue-300'} opacity-50
-                            group-hover:opacity-100 transition-opacity duration-300`}>
-                        </div>
+                        
+                        
 
                         {/* Hover Effect Border */}
                         <div className={`absolute inset-0 border-2 border-transparent rounded-lg
@@ -94,15 +86,7 @@ const Projects = ({showHidden}) => {
                 ))}
             </div>
 
-            {/* Projects Summary */}
-            {projects.length > 0 && (
-                <div className={`mt-8 p-4 rounded-lg ${showHidden ? 'bg-red-50/50' : 'bg-blue-50/50'}
-                    border ${showHidden ? 'border-red-100' : 'border-blue-100'}`}>
-                    <p className={`text-center ${theme.text.secondary} italic`}>
-                        🎯 {projects.length} project{projects.length !== 1 ? 's' : ''} showcasing technical expertise
-                    </p>
-                </div>
-            )}
+            
         </div>
     );
 };

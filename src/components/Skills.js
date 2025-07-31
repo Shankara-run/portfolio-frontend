@@ -56,22 +56,12 @@ return(
                         ))}
                     </div>
 
-                    {/* Decorative Element */}
-                    <div className={`absolute top-2 right-2 w-2 h-2 rounded-full
-                        ${showHidden ? 'bg-red-200' : 'bg-blue-200'} opacity-50
-                        group-hover:opacity-100 transition-opacity duration-300`}>
-                    </div>
+                    
                 </div>
             ))}
         </div>
 
-        {/* Skills Summary */}
-        <div className={`mt-8 p-4 rounded-lg ${showHidden ? 'bg-red-50/50' : 'bg-blue-50/50'}
-            border ${showHidden ? 'border-red-100' : 'border-blue-100'}`}>
-            <p className={`text-center ${theme.text.secondary} italic`}>
-                💡 Hover over skill cards to see interactive effects
-            </p>
-        </div>
+        
     </div>
 )
 };

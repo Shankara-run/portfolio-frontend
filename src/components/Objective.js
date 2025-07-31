@@ -56,12 +56,7 @@ const Objective = ({showHidden}) => {
             </div>
 
             {/* Inspirational Footer */}
-            <div className={`mt-8 text-center p-4 rounded-lg ${showHidden ? 'bg-red-50/50' : 'bg-blue-50/50'}
-                border ${showHidden ? 'border-red-100' : 'border-blue-100'}`}>
-                <p className={`${theme.text.secondary} text-sm italic`}>
-                    💫 "The future belongs to those who believe in the beauty of their dreams" - Eleanor Roosevelt
-                </p>
-            </div>
+            
         </div>
     );
 };
