@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const api = axios.create({
-    baseURL: "http://localhost:8001",  // Matching your working backend port
+    baseURL: "https://shankara-run-portfolio-with-llm-chat.hf.space",  // Matching your working backend port
     timeout: 60000,
     headers: {
         'Content-Type': 'application/json',
