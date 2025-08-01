@@ -251,8 +251,8 @@ function App() {
       </div>
 
       {/* Main Content Area */}
-      <div className="min-h-screen lg:ml-80">
-        <div className="h-screen overflow-y-auto main-content">
+      <div className="min-h-screen lg:ml-80 w-full">
+  <div className="min-h-screen overflow-y-auto main-content px-4 sm:px-6 lg:px-8">
           <div className="p-6 lg:p-8">
 
 
